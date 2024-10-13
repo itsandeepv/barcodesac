@@ -28,13 +28,13 @@ const BarcodeScanner = () => {
     document.body.removeChild(link);
   };
   useEffect(()=>{
-    setshowBarCode(true)
+    // setshowBarCode(true)
   },[])
 
   return (
     <div className='' style={{maxWidth:"500px"}}>
       {/* <h1>Scan a Barcode to Download</h1> */}
-      {/* <button onClick={()=>{setshowBarCode(true)}}>Scan Now</button> */}
+      <button onClick={()=>{setshowBarCode(true)}}>Scan Now</button>
       {
           showBarCode &&
           <QrReader
